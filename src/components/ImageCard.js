@@ -2,10 +2,10 @@ const ImageCard = ({ image }) => {
   const tags = image.tags.split(",");
   
   return (
-    <div className="">
-      <img src={image.webformatURL} alt={image.user} className="" />
+    <div className="break-inside-avoid-column rounded-xl bg-slate-200 mb-4">
+      <img src={image.webformatURL} alt={image.user} className="rounded-t-xl min-w-full" />
       <p>Photo by {image.user}</p>
-      <div className="">
+      <div className="p-4">
         <ul className="list-inside">
           <li>views: {image.views}</li>
           <li>likes: {image.likes}</li>

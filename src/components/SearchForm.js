@@ -12,10 +12,10 @@ const SearchForm = ({ searchText }) => {
   };
 
   return (
-    <div className="p-12 w-fit">
-      <form onSubmit={handleSubmit} className="flex">
-        <input onChange={handleChange} className= "bg-teal-900 w-fit py-2" />
-        <button type="submit" className="px-4 py-2 text-white bg-black">
+    <div className=" py-3 w-full my-4">
+      <form onSubmit={handleSubmit} className="sm:flex flex-col items-center md:flex-row">
+        <input onChange={handleChange} className= "rounded-md p-2 mt-3 max-w-fit bg-slate-100 md:mt-0" />
+        <button type="submit" className="px-4 py-2 w-24 my-4  text-white bg-black md:mx-4">
           search
         </button>
       </form>
