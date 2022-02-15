@@ -31,7 +31,7 @@ function App() {
       {isLoading ? (
         <h1>Loading</h1>
       ) : (
-        <div className="columns-1 gap-4 md:columns-2 lg:columns-3">
+        <div className="columns-1 gap-8 md:columns-2 lg:columns-3">
           {images.map((image, id) => (
             <ImageCard key={id} image={image} />
           ))}
